@@ -63,9 +63,10 @@ padding-bottom: 7px;
     width: 450px;            /* largura da caixa */
     height: auto;            /* altura automática conforme o conteúdo */
     
-     display: flex;           /* ativa o modo flexível (flexbox) */
+    display: flex;           /* ativa o modo flexível (flexbox) */
+    flex-direction: column;
     align-items: center; /* centraliza os itens horizontalmente */
-
+    
     border-radius: 20px;     /* arredonda as bordas */
                                                       
     padding-left: 10px;     /* espaço interno à esquerda */

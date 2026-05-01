@@ -173,10 +173,10 @@ mysqli_close($conexao);
                 </form>
             </div>
             <?php endif; ?>
-</div>
+    </div>
         
         </div>
-                      <button class="voltar"><h3><a href="prof.php" classs="voltar">Voltar ao Menu</a></h3></button>
+                      <button class="voltar"><a href="prof.php" classs="voltar">Voltar ao Menu</a></button>
 
 
     </body>

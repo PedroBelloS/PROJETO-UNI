@@ -131,23 +131,23 @@ mysqli_close($conexao);
             </form>
         
         
-        <?php if ($mensagem != ""): ?>
-            <div class="mensagem <?php echo $tipo_mensagem; ?>">
-                <?php echo $mensagem; ?>
-            </div>
-        <?php endif; ?>
+            <?php if ($mensagem != ""): ?>
+                <div class="mensagem <?php echo $tipo_mensagem; ?>">
+                    <?php echo $mensagem; ?>
+                </div>
+            <?php endif; ?>
         
-        <?php if ($aluno_encontrado): ?>
+            <?php if ($aluno_encontrado): ?>
             <div class="treino">
-                <h3 class="taluno"> Dados do Aluno</h3>
-                <p><strong>Nome:</strong> <?php echo htmlspecialchars($aluno_encontrado['nome']); ?></p>
-                <p><strong>CPF:</strong> <?php echo htmlspecialchars($aluno_encontrado['cpf']); ?></p>
-                <p><strong>E-mail:</strong> <?php echo htmlspecialchars($aluno_encontrado['email']); ?></p>
-                 <p>Total de treinos: <strong><?php echo count($treinos_aluno); ?></strong></p>
+                    <h3 class="taluno"> Dados do Aluno</h3>
+                    <p><strong>Nome:</strong> <?php echo htmlspecialchars($aluno_encontrado['nome']); ?></p>
+                    <p><strong>CPF:</strong> <?php echo htmlspecialchars($aluno_encontrado['cpf']); ?></p>
+                    <p><strong>E-mail:</strong> <?php echo htmlspecialchars($aluno_encontrado['email']); ?></p>
+                    <p>Total de treinos: <strong><?php echo count($treinos_aluno); ?></strong></p>
             
             
-                <?php if (count($treinos_aluno) > 0): ?>
-                <?php foreach ($treinos_aluno as $treino): ?>
+                    <?php if (count($treinos_aluno) > 0): ?>
+                    <?php foreach ($treinos_aluno as $treino): ?>
                     
                             <h3 class="taluno"> Informações do Treino</h3>
 
@@ -170,24 +170,23 @@ mysqli_close($conexao);
                                 <input type="hidden" name="cpf_aluno" value="<?php echo $aluno_encontrado['cpf']; ?>">
                                 <button type="submit" name="excluir_treino" class="bot"> Excluir</button>
                             </form>
-                        
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <div class="red">
-                    Nenhum treino cadastrado para este aluno.
-                </div>
+                    <?php endforeach; ?>
+                    <?php else: ?>
+                        <div class="red">
+                            Nenhum treino cadastrado para este aluno.
+                        </div>
+                    <?php endif; ?>
+            
+
             <?php endif; ?>
-        <?php endif; ?>
         </div>
 
+            </div>          
     </div>
 
-                    <button class="voltar"><h3><a href="prof.php" classs="voltar">Voltar ao Menu</a></h3></button>
+                    <button class="voltar"><a href="prof.php" classs="voltar">Voltar ao Menu</a></button>
                     
 </body>
-
-
 
                 <?php include_once 'footer.php'; ?>
 

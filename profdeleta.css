@@ -10,7 +10,7 @@ margin: 0px;
 body{  
 
 background-color: rgb(164, 164, 164);
-background-image: url("img/");
+background-image: url("img/excluir.jpg");
     /*comando para colocar a imagem de fundo da página "imagem está na pasta img"*/
     background-repeat: no-repeat; 
     background-size: cover; /* ocupar a tela toda */
@@ -51,8 +51,8 @@ font-weight: bold;
 
     width: 450px;            /* largura da caixa */
     height: auto;            /* altura automática conforme o conteúdo */
-    
-     display: flex;           /* ativa o modo flexível (flexbox) */
+    display: block;
+                            /* ativa o modo flexível (flexbox) */
     align-items: center; /* centraliza os itens horizontalmente */
 
     border-radius: 20px;     /* arredonda as bordas */
@@ -61,7 +61,7 @@ font-weight: bold;
     padding-left: 10px;     /* espaço interno à esquerda */
     padding-right: 10px;    /* espaço interno à direita */
     margin-top: 1%;         /* espaço externo acima da caixa */
-    
+    margin-bottom: 20px;
 
     background: rgba(0, 0, 0, 0.618); /* fundo preto com transparência */
     box-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve */
@@ -137,12 +137,9 @@ margin: 10px;
 
 
 .voltar{
-    flex-direction: column; /* empilha */
-    align-items: center;
-
     font-family: Georgia;   /* Código para mudar a fonte do texto*/
-    display: flex;
-    margin: auto;     /* Margem automática da página*/
+    display: block;    
+    margin: 20px auto; /* centraliza e dá espaço */
     background: rgba(0, 0, 0, 0.843);  /* Código para colocar a cor do lado de dentro do botão*/
     padding: 6px 50px;               /*Comando para dar um espaço em todos os lados da parte de dentro da caixa*/        
     border-radius: 10px;              /* Código para arredondar o botão*/
