@@ -53,7 +53,7 @@ $nome_aluno = $aluno['nome'];
 ?>
 
 <div class="img_logo">
-    <img src="img/semfundo.png" alt="Imagem">
+    <img src="img/logo1.png" alt="Imagem">
 </div>
 <!-- logo da academia no topo da página -->
 
@@ -98,7 +98,7 @@ $nome_aluno = $aluno['nome'];
                     <div class='card_treino'>
                         <h3>" . $treino['nome_treino'] . "</h3>
                         <p><b>Professor:</b> " . $treino['nome_professor'] . "</p>
-                        <p><b>Descrição:</b> " . $treino['descricao'] . "</p>
+                        <p><b>Descrição:</b> " . $treino['descricao_treino'] . "</p>
                         <p><b>Data:</b> " . date('d/m/Y', strtotime($treino['data_criacao'])) . "</p>
                     </div>
                     ";
