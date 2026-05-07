@@ -9,8 +9,8 @@ margin: 0px;
 
 body{  
 
-background-color: rgb(164, 164, 164);
-background-image: url("img/excluir.jpg");
+    background-color: rgb(164, 164, 164);
+    background-image: url("img/excluir.jpg");
     /*comando para colocar a imagem de fundo da página "imagem está na pasta img"*/
     background-repeat: no-repeat; 
     background-size: cover; /* ocupar a tela toda */

@@ -68,19 +68,30 @@
             if ($resultado)
             {
                     echo '
-                <body style="text-align: center;">
+                <!DOCTYPE html>
+                <html lang="pt-br">
+                <head>
+                        <meta charset="UTF-8">
+                        <title>Cadastro realizado</title>
+                        <link rel="stylesheet" href="cadSalvar.css">
+                </head>
 
-                        <h1>ZENIT</h1>
-                        <h3>Cadastro realizado com sucesso!</h3>
+                        <div class = "logo">
+                                <img src="img/logo1.png" alt="">
+                        </div>
+                        <body>
+
+                        <h3 class="green">Cadastro realizado com sucesso!</h3>
                         <p>Agora você pode acessar o sistema</p>
 
                         <br>
 
-                        <a href="logintela.php">
+                                <a href="logintela.php">
                                 <button>Acessar o sistema</button>
-                        </a>
+                                </a>
 
                 </body>
+                </html>
                 ';
             }
             //esse "if ($resultado)" verifica se deu certo, se sim, aparece uma mensagem falando que o cadastro foi feito e redireciona para a tela de login novamente
@@ -97,3 +108,5 @@
     }
 
 ?>
+
+         <?php include_once 'footer.php'; ?>

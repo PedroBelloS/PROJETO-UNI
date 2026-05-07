@@ -176,8 +176,9 @@ mysqli_close($conexao);
     </div>
         
         </div>
+                      <button class="voltar"><a href="Deleta_Prof.php" classs="voltar">Excluir e Alterar Aluno</a></button>
                       <button class="voltar"><a href="prof.php" classs="voltar">Voltar ao Menu</a></button>
-
+                      <button class="voltar"><a href="logintela.php" classs="voltar">Voltar ao Login</a></button>
 
     </body>
 

@@ -10,8 +10,8 @@ margin: 0px;
 
 body{
 
-background-color: rgb(0, 0, 0);
-background-image: url("img/pgprof2.jpg");
+    background-color: rgb(0, 0, 0);
+    background-image: url("img/pgprof2.jpg");
     /*comando para colocar a imagem de fundo da página "imagem está na pasta img"*/
     background-repeat: no-repeat; 
     background-size: cover; /* ocupar a tela toda */
@@ -37,7 +37,7 @@ background-image: url("img/pgprof2.jpg");
 .cabeca{
 
 text-align: center; /* centralizar */
-margin-top: 10px; /* margem 20 para todos os lados */
+margin-top: 10px; /* margem 10 para todos os lados */
 color: #ffffff;
 }
 
